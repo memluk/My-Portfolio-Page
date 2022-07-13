@@ -1,0 +1,204 @@
+<!DOCTYPE doc>
+<html lang="en-us">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>My Portfolio Page</title>
+  <link href="Style.css" rel="stylesheet" type="text/css" />
+  <link href="Responsive.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <div class="logo"><a href="./"><img src="Coder_round.png" width="50" height="50" alt="Coder"></a></div>
+    <ul class="main-menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="#Education">Education</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="Main-Page-Files\Murat Yasar CV (EN-07.22).pdf" target="_blank">Curriculum Vitae (EN)</a></li>
+      <li><a href="Main-Page-Files\Murat Yasar - Lebenslauf  (07.2022).pdf" target="_blank">Lebenslauf (DE)</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="flex-container-column">
+      <div class="flex-child-column-top">
+        <div id="main-photo-div"> <img id="my-photo" src="Murat YASAR (600x600).jpg" width="300" height="300" alt="Murat Yaşar"> </div>
+        <div id="Greetings"><h1>Hi, I'm Murat</h1></div>
+      </div>
+      <div class="flex-child-column-bottom">
+        <h2>I'm a Frontend Web Developer and I'm in love with coding.</h2>
+        <p>My passion is software and web development. I create responsive and dynamic websites by using HTML, CSS and Javascript.<br>
+        I describe myself a highly dedicated, self-driven  person who sees challenges as the best opportunities for development.<br>
+        If you want to learn more about me, you can check my <a href="https://www.linkedin.com/in/murat-ya%C5%9Far-20b55021/">Linkedin</a> profile 
+        or <a href="https://github.com/memluk">GitHub</a> account.<br>
+      </div>
+    </div>
+  </header>
+
+  <hr/>
+
+ <!-- Education -->
+  <section class="section" id="Education">
+    <h2>My Educational Background</h2>
+    <ul>
+      <li id="FreeCodeCamp" onclick="goToLink('FreeCodeCamp')">
+        <a href="https://www.freecodecamp.org/" class="no-link-effect"><h3>freeCodeCamp</h3></a>
+        <p>Web Development Track<span> (2022) </span></p>
+      </li>
+      <li id="Aarhus" onclick="goToLink('Aarhus')">
+        <a href="https://international.au.dk/" class="no-link-effect""><h3>Aarhus University</h3></a>
+        <p>Staffing and Personnel Selection<span> (2015) </span></p>
+      </li>
+      <li id="Fatih" onclick="goToLink('Fatih')">
+        <a href="https://en.wikipedia.org/wiki/Fatih_University" class="no-link-effect"><h3>Fatih University</h3></a>
+        <p>Master of Business Administration<span> (2015) </span></p>
+    </li>
+    <li id="Fatih" onclick="goToLink('Fatih')">
+      <a href="https://en.wikipedia.org/wiki/Fatih_University" class="no-link-effect"><h3>Fatih University</h3></a>
+      <p> Bachelor of Science in Physics<span> (2005) </span></p>
+    </li>
+  </ul>
+ </section>
+ 
+ <hr/>
+
+ <!-- Languages & Hobbies -->
+ <section class="section" id="About">
+  <div class="flex-container-row">
+    <div class="flex-child-row">
+      <h2>Language Proficiency</h2>
+      <p><b>Turkish:</b> Mother language</p>
+      <p><b>English:</b> Full professional proficiency</p>
+      <p><b>German:</b> Full working proficiency</p>
+    </div>
+    <div class="flex-child-row">
+      <h2>Hobbies</h2>
+      <p>Coding</p>
+      <p>Chess</p>
+      <p>Puzzles</p>
+    </div>
+  </div>
+</section>
+
+<hr/>
+
+<!-- HTML & CSS Projects -->
+<section class="section projects" id="static-projects">
+  <h2>My Static Web Projects (HTML & CSS)</h2>
+  <div class="flex-container-row">
+    <div class="flex-child-row" id="tribute-page">
+      <div class="details">
+        <h3 class="title">Tribute Page: Nikola Tesla</h3>
+        <p class="description"><i>I built this website in the memory of great genious "Nikola Tesla".</i></p>
+        <button class="read-more"><a href="MyProjects\PersonalPortfolio\Projects\Tribute-Page\TributePage-NikolaTesla.html">Read More</a></button>
+      </div>
+    </div>
+
+    <div class="flex-child-row" id="landing-page">
+      <div class="details">
+        <h3 class="title">Landing Page: ChessMasters - Grandmasters Ed.</h3>
+        <p class="description"><i>I built this website in order to introduce you an awesome chess game by Ubisoft.</i></p>
+        <button class="read-more"><a href="MyProjects\PersonalPortfolio\Projects\ChessApp\LandingPage-ChessApp.html">Read More</a></button>
+      </div>
+    </div>
+
+<!-- 
+    <div class="flex-child-row">
+      <h3 class="title">Survey Form: </h3>
+    </div>
+
+    <div class="flex-child-row">
+      <h3 class="title">Technical Documentation: Chess</h3>
+    </div>
+     -->
+
+  </div>
+</section>
+
+<!-- JavaScript & React Projects -->
+<section class="section" id="dynamic-projects">
+  <h2>My Dynamic Web Projects (JavaScript & React)</h2>
+  <div class="flex-container-row">
+    <div class="flex-child-row">
+      <h3>Games: </h3>
+      <p><a href="GuessTheNumberGame.html">Guess-the-Number</a></p>
+      <p><a href="RockPaperScissorsGame.html">Rock-Papers-Scissors</a></p>
+    </div>
+
+    <div class="flex-child-row">
+      <h3>Web Applications: </h3>
+      <p><a href="ToDoList.html">ToDo List</a></p>
+      <p><a href="GermanFlashCards.html">German FlashCards</a></p>
+      <p><a href="InspiringQuotesGenerator.html">Inspiring Quotes</a></p>
+    </div>
+
+    <div class="flex-child-row">
+      <h3>APIs: </h3>
+      <p><a href="CheckMyName.html">Check Your Name</a></p>
+      <p><a href="ExchangeRates.html">Exchange Rates</a></p>
+    </div>
+  </div>
+</section>
+
+  <hr/>
+
+  <!-- Contact Form -->
+  <section class="section" id="Contact">
+    <h2>Contact me</h2>
+    <table>
+      <form action="" method="post" class="Contact">
+        <tr>
+          <td><label for="name">Name: </label></td>
+          <td><input type="text" name="name" id="name"/></td>
+        </tr>      
+        <tr>
+          <td><label for="email">E-mail: </label></td>
+          <td><input type="email" name="email" id="email"/></td>
+        </tr>
+        <tr>
+          <td><label for="message">Message </label></td>
+        </tr>
+        <tr>
+          <td colspan="2"><textarea name="message" id="message" cols="50" rows="10" placeholder="Type your message here..."></textarea></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Submit"/></td>
+        </tr>
+      </form>
+    </table>
+
+
+  </section>
+
+  <hr />
+
+  <!-- Here is my footer -->
+  <footer id="contact">
+    <span class="icon-container"><i>Murat Yasar</i> </span>
+    <span class="icon-container"> <span class="material-icons">call</span><i> +49 ... ... .... </i></span>
+    <span class="icon-container"> <span class="material-icons">mail</span><i> memluk@gmail.com </i></span>
+    <span class="icon-container">
+        <ul style="display: flex;">
+            <li style="list-style: none;"><a href="https://www.linkedin.com/in/murat-yasar-20b55021/"><div class="icon-box"><i class="fa fa-linkedin-square fa-2x"></i></div></a></li>
+            <li style="list-style: none;"><a href="https://github.com/memluk"><div class="icon-box"><i class="fa fa-github fa-2x"></i></div></a></li>
+        </ul>
+    </span>
+  </footer>
+
+  <script>
+    function goToLink(linkName){
+      switch (linkName) {
+        case 'FreeCodeCamp': window.open("https://www.freecodecamp.org/");
+        case 'Aarhus': window.open("https://international.au.dk/");
+        case 'Fatih': window.open("https://en.wikipedia.org/wiki/Fatih_University");
+      }
+    }
+  </script>
+</body>
+</html>
